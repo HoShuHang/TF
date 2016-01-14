@@ -8,6 +8,7 @@ import tw.edu.ntut.csie.game.core.MovingBitmap;
 import tw.edu.ntut.csie.game.engine.GameEngine;
 import tw.edu.ntut.csie.game.extend.BitmapButton;
 import tw.edu.ntut.csie.game.extend.ButtonEventHandler;
+import tw.edu.ntut.csie.game.service.WSClient;
 
 public class StateReady extends AbstractGameState {
 
@@ -39,6 +40,7 @@ public class StateReady extends AbstractGameState {
         initializeHelpButton();
         initializeAboutButton();
         setVisibility(false, false);
+        WSClient client = WSClient.getInstance();
     }
 
     /**
